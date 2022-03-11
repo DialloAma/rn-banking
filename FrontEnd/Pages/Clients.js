@@ -18,7 +18,7 @@ const Clients = ({navigation}) => {
            <TouchableOpacity style={styles.buton} activeOpacity={0.5} onPress={()=>{
                navigation.navigate("Account",{fullname})
            }} >
-              <Text style={{fontSize:20,fontWeight:"bold"}}>Confirm</Text>
+              <Text style={{fontSize:20,fontWeight:"bold"}}>Create an Account</Text>
             </TouchableOpacity>
       </View>   
     </View>

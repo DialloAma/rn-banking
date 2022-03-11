@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Clients from '../Pages/Clients';
+import Stacknavigator from './StackNavigator';
 import Accounts from '../Pages/Accounts';
 
 const Menu = () => {
@@ -10,8 +10,11 @@ const Menu = () => {
     return (
         <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={Clients} />
-        <Tab.Screen name="Account" component={Accounts} />
+        <Tab.Screen options={{
+            header:()=>null
+        }}
+         name="Stack" component={Stacknavigator} />
+        
       </Tab.Navigator>
     </NavigationContainer>
     );
