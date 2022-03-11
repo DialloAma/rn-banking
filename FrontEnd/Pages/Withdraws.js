@@ -1,17 +1,14 @@
 import React from 'react';
-import {View, StyleSheet, TextInput, Text, TouchableOpacity} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 
-const Clients = () => {
-
+const Withdraws = () => {
     return (
         <View style={{flex:1,backgroundColor:"#fff",marginHorizontal:25,justifyContent:"center"}}>
         <View style={{alignItems:"center"}}>
-        <Text style={{fontSize:25}}>Full Name</Text>
-    <TextInput style={styles.input}  />
-    <Text style={{fontSize:25}}>Phone Number</Text>
-    <TextInput style={styles.input}  />
-    <Text style={{fontSize:25}}>Address</Text>
-    <TextInput style={styles.input}  />
+         <Text style={{fontSize:25}}>Account Number </Text>
+         <TextInput keyboardType='numeric' style={styles.input}  />
+         <Text style={{fontSize:25}}>Amount</Text>
+         <TextInput keyboardType='numeric'  style={styles.input}  />
       </View>
       <View style={{alignItems:"center",marginHorizontal:30}} >
            <TouchableOpacity style={styles.buton} activeOpacity={0.5}>
@@ -42,4 +39,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Clients;
+export default Withdraws;

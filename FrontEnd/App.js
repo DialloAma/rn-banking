@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Clients from './Pages/Clients';
+import Accounts from './Pages/Accounts';
 
 export default function App() {
   return (
