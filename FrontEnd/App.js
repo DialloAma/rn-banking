@@ -1,12 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import Clients from './Pages/Clients';
-import Accounts from './Pages/Accounts';
+import Menu from './Routes/Menu';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-    <Clients/>
+    <Menu/>
     <StatusBar style="auto" />
     </SafeAreaView >
   );
