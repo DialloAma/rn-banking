@@ -11,7 +11,7 @@ const Menu = () => {
         <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={Clients} />
-        <Tab.Screen name="Settings" component={Accounts} />
+        <Tab.Screen name="Account" component={Accounts} />
       </Tab.Navigator>
     </NavigationContainer>
     );
