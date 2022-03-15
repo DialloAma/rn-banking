@@ -5,7 +5,7 @@ const Clients = ({navigation}) => {
      const [fullname, setFullname] = useState("");
 
     return (
-        <View style={{flex:1,backgroundColor:"#fff",marginHorizontal:25,justifyContent:"center"}}>
+        <View style={{flex:1,backgroundColor:"#fff",marginHorizontal:25,justifyContent:"center",marginVertical:30}}>
         <View style={{alignItems:"center"}}>
         <Text style={{fontSize:25}}>Full Name</Text>
     <TextInput style={styles.input} value={fullname} onChangeText={(text)=>setFullname(text)}  />
