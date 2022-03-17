@@ -51,5 +51,14 @@ const CreateDepositController=(req,res)=>{
         console.log(error)
     }
 }
+const getAllDeposits=async(req,res)=>{
+    try {
+        const Alldeposit = await depositModel.find();
+        res.json({data:Alldeposit})
+    } catch (error) {
+        console.log(error)
+    }
 
-module.exports=CreateDepositController;
+}
+
+module.exports={CreateDepositController,getAllDeposits};
